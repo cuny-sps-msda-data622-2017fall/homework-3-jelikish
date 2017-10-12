@@ -33,12 +33,12 @@ Strengths:
 Fast deployment, minimal time required for this setup, do not have to deal with docker migration which can be a painful process
 
 Weaknesses:
-If we need to scale this in the future, we have no process, basically each machine will have to be built individually or alternative image of linux will have to be created before being deployed
+If we need to scale this in the future, we have no process, basically each machine will have to be built individually or alternative image of linux will have to be created before being deployed.  Also we will need to make sure all the packages are similar across all the servers.
 
 **AWS Method 2** (2 points)
 
 Description: 
-Setup aws server, install docker on the server and then migrate the docker image
+Migrate docker image directly to the cloud.
 
 
 Strengths: 
@@ -75,7 +75,7 @@ Strengths:
 The benefit of this approach is that you can have unlimited power behind your machine learning if you are dealing with large datasets. From what I can see there are some nice features also available that make process somewhat simpler when everything is setup.
 
 Weaknesses:
-The downside is that you are limited to what the cloud based machine learning can do for you. There is limited number of methods available so the capabilities are not as flexible as you would have with python based machine learning. Also you are really moving towards one particular platform, in other words if you setup cloud storage and then cloud based machine learning it will be much harder for you to move somewhere else if you decide so in the future or move everything locally (for whatever reason).  So Staying with python based machine learning could with or without docker, gives you flexibility of migrating where you want fast.  In my opining the last is a considerable downside and needs to be considered very carefully before committing to the ecosystem.
+The downside is that you are limited to what the cloud based machine learning can do for you. There is limited number of methods available so the capabilities are not as flexible as you would have with python based machine learning. Also you are really moving towards one particular platform, in other words if you setup cloud storage and then cloud based machine learning it will be much harder for you to move somewhere else if you decide so in the future or move everything locally (for whatever reason).  So Staying with python based machine learning could with or without docker, gives you flexibility of migrating where you want fast.  In my opining the last is a considerable downside and needs to be considered very carefully before fully committing to the ecosystem.
 
 
 
@@ -83,3 +83,6 @@ The downside is that you are limited to what the cloud based machine learning ca
 ### Applied (7 points total)
 
 Choose one of the methods described above, and implement it using your work from homework 2.  Submit screenshots in the *screenshot* folder on this repo to document the completion of your process.
+
+
+## Please read readme.md located in screenshots folder
